@@ -12,11 +12,11 @@ func print(till int, message string) {
 }
 
 func main() {
-	runtime.GOMAXPROCS(2)
+	runtime.GOMAXPROCS(2) //menentukan jumlah core saat eksekusi program
 
-	go print(5, "halo")
+	go print(5, "halo") //penambahan go menandakan pembuatan gorountine baru
 	print(5, "apa kabar")
 
 	var input string
-	fmt.Scanln(&input)
+	fmt.Scanln(&input) //Scanln mengcapture karakter dan disimpan ke dalam variabel
 }
