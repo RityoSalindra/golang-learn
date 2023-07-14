@@ -20,4 +20,7 @@ func main() {
 	<-timer.C
 	fmt.Println("finish")
 
+	<-time.After(4 * time.Second) //time after ini mirip seperti time.Sleep(), fungsi timer.After() akan mengembalikan data channel, sehingga perlu menggunakan tanda <- dalam penerapannya.
+	fmt.Println("expired")
+
 }
