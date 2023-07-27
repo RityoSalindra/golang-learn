@@ -14,13 +14,12 @@ import (
 const totalFile = 3000
 const contentLength = 5000
 
-var tempPath = filepath.Join(os.Getenv("TEMP"), "temp-simplified-fan-in-fan-out")
+var tempPath = filepath.Join(os.Getenv("TEMP"), "temp-pipeline-context-cancellation")
 
-// struct ini digunakan sebagai skema payload data
 type FileInfo struct {
 	Index       int
 	FileName    string
-	WorkerIndex int //penanda worker yang sedang melakukan operasi
+	WorkerIndex int
 	Err         error
 }
 
