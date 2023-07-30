@@ -28,5 +28,13 @@ func main() {
 		fmt.Println(err.Error())
 
 	}
+	//start menggunakan server
+
+	// server := new(http.Server)
+	// server.Addr = address
+	// err := server.ListenAndServe()
+	// if err != nil {
+	// 	fmt.Println(err.Error())
+	// }
 
 }
